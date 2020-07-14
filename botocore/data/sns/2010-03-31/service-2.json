@@ -2016,6 +2016,10 @@
         "MessageAttributes":{
           "shape":"MessageAttributeMap",
           "documentation":"<p>Message attributes for Publish action.</p>"
+        },
+        "PhoneNumber":{
+          "shape":"phoneNumber",
+          "documentation":"<p>Phone number for Publish action.</p>"
         }
       },
       "documentation":"<p>Input for Publish action.</p>"
@@ -2264,6 +2268,7 @@
     "messageId":{"type":"string"},
     "messageStructure":{"type":"string"},
     "nextToken":{"type":"string"},
+    "phoneNumber":{"type":"string"},
     "protocol":{"type":"string"},
     "string":{"type":"string"},
     "subject":{"type":"string"},
