@@ -23,9 +23,6 @@ if sys.version_info[:2] == (2, 6):
     requires.append('simplejson==3.3.0')
 
 
-dependency_links = ['aiobotocore@git+ssh://git@github.com/1mgOfficial/aiobotocore.git@0.0.5']
-
-
 setup(
     name='botocore',
     version=botocore.__version__,
@@ -38,7 +35,7 @@ setup(
     package_data={'botocore': ['data/*.json', 'data/*/*.json'],
                   'botocore.vendored.requests': ['*.pem']},
     include_package_data=True,
-    install_requires=requires + dependency_links,
+    install_requires=requires,
     extras_require={
         ':python_version=="2.6"': [
             'ordereddict==1.1',
